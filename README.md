@@ -3,7 +3,6 @@
 [![Python Version](https://img.shields.io/badge/python-3.12%2B-blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![PyPI Version](https://img.shields.io/pypi/v/taskorchestrator)](https://pypi.org/project/taskorchestrator/)
-[![Documentation](https://img.shields.io/badge/docs-available-brightgreen)](https://github.com/yourusername/taskorchestrator/docs)
 
 **TaskOrchestrator** is a Python library for managing complex workflows of asynchronous tasks with dependencies, retries, timeouts, and real-time monitoring. It simplifies the orchestration of tasks in scenarios like ETL pipelines, microservices coordination, and workflow automation.
 
