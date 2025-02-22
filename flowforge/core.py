@@ -28,7 +28,7 @@ class Task:
                     raise e
                 print(f"Retrying {self.func.__name__}... (Attempt {attempt + 1})")
 
-class FlowForge:
+class TaskOrchestrator:
     def __init__(self):
         self.tasks: List[Task] = []
 

@@ -1,4 +1,4 @@
-# Contributing to FlowForge
+# Contributing to TaskOrchestrator
 
 We welcome contributions! Here's how you can help:
 

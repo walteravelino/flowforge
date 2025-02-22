@@ -1,5 +1,5 @@
 import asyncio
-from flowforge import FlowForge, Task
+from taskorchestrator import TaskOrchestrator, Task
 
 async def task_a():
     print("Task A started")
@@ -17,7 +17,7 @@ async def task_c():
     return "Task C completed"
 
 async def main():
-    flow = FlowForge()
+    flow = TaskOrchestrator()
     task1 = Task(task_a)
     task2 = Task(task_b)
     task3 = Task(task_c)

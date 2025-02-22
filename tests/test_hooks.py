@@ -1,7 +1,7 @@
 import asyncio
 import pytest
-from flowforge.core import Task
-from flowforge.hooks import TaskHooks
+from taskorchestrator.core import Task
+from taskorchestrator.hooks import TaskHooks
 
 @pytest.mark.asyncio
 async def test_hooks():

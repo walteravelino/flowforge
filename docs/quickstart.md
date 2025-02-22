@@ -2,14 +2,14 @@
 
 ## Installation
 ```bash
-pip install flowforge
+pip install taskorchestrator
 ```
 
 Basic Usage
 
 ```python
 import asyncio
-from flowforge import FlowForge, Task
+from taskorchestrator import TaskOrchestrator, Task
 
 
 async def fetch_data():
@@ -20,7 +20,7 @@ async def process_data(data):
     return [x * 2 for x in data["data"]]
 
 
-flow = FlowForge()
+flow = TaskOrchestrator()
 task1 = Task(fetch_data)
 task2 = Task(process_data, depends_on=[task1])
 

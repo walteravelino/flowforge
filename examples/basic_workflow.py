@@ -1,5 +1,5 @@
 import asyncio
-from flowforge import FlowForge, Task
+from taskorchestrator import TaskOrchestrator, Task
 
 async def fetch_data():
     print("Fetching data...")
@@ -17,7 +17,7 @@ async def save_results(results):
     return f"Results saved: {results}"
 
 async def main():
-    flow = FlowForge()
+    flow = TaskOrchestrator()
     task1 = Task(fetch_data, retries=3, timeout=5)
     task2 = Task(process_data, depends_on=[task1])
     task3 = Task(save_results, depends_on=[task2])

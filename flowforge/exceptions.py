@@ -1,11 +1,11 @@
-class FlowForgeError(Exception):
-    """Base exception for FlowForge errors."""
+class TaskOrchestratorError(Exception):
+    """Base exception for TaskOrchestrator errors."""
     pass
 
-class TaskTimeoutError(FlowForgeError):
+class TaskTimeoutError(TaskOrchestratorError):
     """Raised when a task exceeds its timeout."""
     pass
 
-class TaskRetryError(FlowForgeError):
+class TaskRetryError(TaskOrchestratorError):
     """Raised when a task fails after all retries."""
     pass

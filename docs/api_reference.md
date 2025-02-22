@@ -3,7 +3,7 @@
 ## Task
 - `Task(func, depends_on=None, retries=0, timeout=None)`
 
-## FlowForge
+## TaskOrchestrator
 - `add_tasks(*tasks)`
 - `run()`
 - `run_parallel()`
